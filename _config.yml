@@ -1,0 +1,9 @@
+# Site settings
+title: 'La Última Plaga'
+tagline: 'Estoy detrás de ti'
+sidebar_image: /images/cover.jpg
+
+# Build settings
+markdown: redcarpet
+highlighter: pygments
+baseurl: https://laultimaplaga.github.io

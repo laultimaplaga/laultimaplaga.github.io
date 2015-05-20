@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<header id="home-header" style="background-image: url({{ site.baseurl }}{{ site.sidebar_image }});">
+  <div class="container">
+    <h1>{{ site.title }}</h1>
+    <ul class="meta">
+      <li>
+        <span>
+          {{ site.tagline }}
+        </span>
+      </li>
+    </ul>
+  </div>
+</header>
+<article>
+  <div class="container">
+    <ul class="posts">
+      {% for post in site.posts %}
+        <li>
+          <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+          <span class="meta">
+            <!-- {{ post.date | date_to_string }} -->
+            {% assign m = post.date | date: "%-m" %}
+            {{ post.date | date: "%-d de " }}
+            {% case m %}
+              {% when '1' %}Enero
+              {% when '2' %}Febrero
+              {% when '3' %}Marzo
+              {% when '4' %}Abril
+              {% when '5' %}Mayo
+              {% when '6' %}Junio
+              {% when '7' %}Julio
+              {% when '8' %}Agosto
+              {% when '9' %}Septiembre
+              {% when '10' %}Octubre
+              {% when '11' %}Noviembre
+              {% when '12' %}Diciembre
+            {% endcase %}
+            {{ post.date | date: " de %Y" }}
+          </span>
+          {{ post.excerpt }}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</article>
