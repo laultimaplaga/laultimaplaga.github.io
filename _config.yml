@@ -4,6 +4,6 @@ tagline: 'Estoy detrás de ti'
 sidebar_image: /images/cover.jpg
 
 # Build settings
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
-baseurl: https://laultimaplaga.github.io
+baseurl: http://laultimapla.ga

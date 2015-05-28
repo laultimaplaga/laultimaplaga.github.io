@@ -203,6 +203,70 @@ header .home_button:hover {
   -webkit-transition: background 300ms linear;
 }
 
+header .archive_button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: block;
+  width: 21px;
+  height: 18px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  line-height: 40px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  text-align: center;
+  background-image: url(../images/icon_archive.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  transition: background 300ms linear;
+  -webkit-transition: background 300ms linear;
+}
+
+header .archive_button:hover {
+  background: #fff;
+  background-image: url(../images/icon_archive_hover.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ce2323;
+  transition: background 300ms linear;
+  -webkit-transition: background 300ms linear;
+}
+
+header .rss_button {
+  position: absolute;
+  top: 10px;
+  left: 58px;
+  display: block;
+  width: 21px;
+  height: 21px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  line-height: 40px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  text-align: center;
+  background-image: url(../images/icon_rss.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  transition: background 300ms linear;
+  -webkit-transition: background 300ms linear;
+}
+
+header .rss_button:hover {
+  background: #fff;
+  background-image: url(../images/icon_rss_hover.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ce2323;
+  transition: background 300ms linear;
+  -webkit-transition: background 300ms linear;
+}
+
 header ul.meta {
   margin-top: 45px;
   margin-bottom: 10px;
@@ -345,5 +409,41 @@ ul.posts .meta {
 }
 
 ul.posts p {
-  margin-bottom: 36px;
+  margin-bottom: 6px;
 }
+
+/* Read more... */
+
+a.more {
+    color: #CE2323;
+    font-size: 17px;
+    text-decoration: none;
+    float: right;
+}
+a.more:hover
+{
+    color: #CE2323;
+    text-decoration: underline;         
+}
+
+/* Share buttons */
+
+#share-buttons img {
+  width: 50px;
+  padding: 5px;
+  border: 0;
+  box-shadow: 0;
+  opacity: 1;
+  display: inline;
+}
+
+#share-buttons img:hover {
+  width: 50px;
+  padding: 0px;
+  border: 0;
+  box-shadow: 0;
+  opacity: 1;
+  display: inline;
+}
+
+

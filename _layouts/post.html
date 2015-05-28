@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<header style="background-image: url({{ site.baseurl }}/images/cover.jpg);">
+<header style="background-image: url({{ site.baseurl }}{{ site.sidebar_image }});">
   <div class="container post-container">
     <a href="{{ site.baseurl }}" class="home_button"></a>
     <div class="inner-container">
@@ -30,12 +30,6 @@ layout: default
           {% endcase %}
           {{ page.date | date: " de %Y" }}
         </li>
-        <li>
-<!--           <span>
-            Category
-          </span>
-          {{ page.categories }} -->
-        </li>
       </ul>      
     </div>
     <ul class="pagination">
@@ -60,5 +54,37 @@ layout: default
 <article>
   <div class="container">
     {{ content }}
+
+    <br>
+    <div id="share-buttons">
+     
+      <!-- Facebook -->
+      <a href="http://www.facebook.com/sharer.php?u={{ site.baseurl }}{{ page.url }}" target="_blank" title="Facebook"><img src="{{ site.baseurl }}/images/social/facebook.png" alt="Facebook" /></a>
+  
+      <!-- Twitter -->
+      <a href="http://twitter.com/share?url={{ site.baseurl }}{{ page.url }}&text={{ page.title }}&hashtags=LaUltimaPlaga" target="_blank" title="Twitter"><img src="{{ site.baseurl }}/images/social/twitter.png" alt="Twitter" /></a>
+       
+      <!-- Google+ -->
+      <a href="https://plus.google.com/share?url={{ site.baseurl }}{{ page.url }}" target="_blank" title="Google+"><img src="{{ site.baseurl }}/images/social/google.png" alt="Google+" /></a>
+       
+      <!-- Digg -->
+      <a href="http://www.digg.com/submit?url={{ site.baseurl }}{{ page.url }}" target="_blank" title="Digg"><img src="{{ site.baseurl }}/images/social/diggit.png" alt="Digg" /></a>
+       
+      <!-- Reddit -->
+      <a href="http://reddit.com/submit?url={{ site.baseurl }}{{ page.url }}&title={{ page.title }}" target="_blank" title="Reddit"><img src="{{ site.baseurl }}/images/social/reddit.png" alt="Reddit" /></a>
+       
+      <!-- LinkedIn -->
+      <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.baseurl }}{{ page.url }}" target="_blank" title="LinkedIn"><img src="{{ site.baseurl }}/images/social/linkedin.png" alt="LinkedIn" /></a>
+       
+      <!-- Pinterest -->
+      <!-- <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());"><img src="{{ site.baseurl }}/images/social/pinterest.png" alt="Pinterest" /></a> -->
+       
+      <!-- StumbleUpon-->
+      <a href="http://www.stumbleupon.com/submit?url={{ site.baseurl }}{{ page.url }}&title={{ page.title }}" target="_blank" title="StumbleUpon"><img src="{{ site.baseurl }}/images/social/stumbleupon.png" alt="StumbleUpon" /></a>
+       
+      <!-- Email -->
+      <a href="mailto:?Subject={{ page.title }}&Body=Entrada%20de%20&#34;La%20Última%20Plaga&#34;:%20%20 {{ site.baseurl }}{{ page.url }}" target="_blank" title="Email"><img src="{{ site.baseurl }}/images/social/email.png" alt="Email" /></a>
+
+    </div>
   </div>
 </article>

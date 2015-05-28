@@ -2,6 +2,8 @@
 layout: default
 ---
 <header id="home-header" style="background-image: url({{ site.baseurl }}{{ site.sidebar_image }});">
+  <a href="{{ site.baseurl }}/archivo.html" class="archive_button"></a>
+  <a href="{{ site.baseurl }}/rss.xml" class="rss_button"></a>
   <div class="container">
     <h1>{{ site.title }}</h1>
     <ul class="meta">
@@ -40,6 +42,9 @@ layout: default
             {{ post.date | date: " de %Y" }}
           </span>
           {{ post.excerpt }}
+          <h3>
+            <a class="more" href="{{ site.baseurl }}{{ post.url }}">Leer más...</a>
+          </h3>
         </li>
       {% endfor %}
     </ul>
